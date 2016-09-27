@@ -10,6 +10,7 @@ It is a simple example of using the Dependency Injection and Repository Pattern 
 Features:
 ===============
 1- Admin/NormalUsers Can view all branches
+
 2- Admin can Edit/Delete an existing branch
 
 -----------------------------------------------------------------------------------------
