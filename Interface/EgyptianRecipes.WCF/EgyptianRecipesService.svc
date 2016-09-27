@@ -1,0 +1,7 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="EgyptianRecipes.WCF.EgyptianRecipesService" 
+    CodeBehind="EgyptianRecipesService.svc.cs" 
+    Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory"
+    %>

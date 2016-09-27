@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/EgyptianRecipes.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EgyptianRecipes.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EgyptianRecipes.Entities.Base" />
+  <xs:complexType name="Branch">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/EgyptianRecipes.Entities.Base" base="q1:InheritDb">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BranchID" type="xs:long" />
+          <xs:element minOccurs="0" name="ClosingHour" type="xs:long" />
+          <xs:element minOccurs="0" name="ClosingHourValue" type="ser:duration" />
+          <xs:element minOccurs="0" name="ManagerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OpeningHour" type="xs:long" />
+          <xs:element minOccurs="0" name="OpeningHourValue" type="ser:duration" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Branch" nillable="true" type="tns:Branch" />
+  <xs:complexType name="ArrayOfBranch">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Branch" nillable="true" type="tns:Branch" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBranch" nillable="true" type="tns:ArrayOfBranch" />
+</xs:schema>

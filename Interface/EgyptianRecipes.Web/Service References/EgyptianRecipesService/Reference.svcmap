@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4c79d501-650b-4181-88c1-97e20f2c469a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:45498/EgyptianRecipesService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EgyptianRecipesService.xsd" MetadataType="Schema" ID="d5f5710e-e26e-40b6-8b05-7a6ad5424853" SourceId="1" SourceUrl="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EgyptianRecipesService1.xsd" MetadataType="Schema" ID="a59d0699-38c7-4445-8f88-cc766e69f024" SourceId="1" SourceUrl="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EgyptianRecipesService2.xsd" MetadataType="Schema" ID="ee58117a-d055-4c24-aae4-9f3b36ebd028" SourceId="1" SourceUrl="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EgyptianRecipesService3.xsd" MetadataType="Schema" ID="da967f5e-8f49-4ac5-be06-32694d03f9d1" SourceId="1" SourceUrl="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EgyptianRecipesService4.xsd" MetadataType="Schema" ID="2dbeca0d-340a-4e26-b2aa-0c7db1240e61" SourceId="1" SourceUrl="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd4" />
+    <MetadataFile FileName="EgyptianRecipesService.disco" MetadataType="Disco" ID="ffcf1d9d-815e-43e3-b093-c16486da871d" SourceId="1" SourceUrl="http://localhost:45498/EgyptianRecipesService.svc?disco" />
+    <MetadataFile FileName="EgyptianRecipesService.wsdl" MetadataType="Wsdl" ID="8bbe24e8-a1ee-41fc-9bed-aef5d500e8ca" SourceId="1" SourceUrl="http://localhost:45498/EgyptianRecipesService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

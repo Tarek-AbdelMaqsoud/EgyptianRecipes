@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EgyptianRecipesService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EgyptianRecipes.Entities" />
+      <xsd:import schemaLocation="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EgyptianRecipes.Entities.Base" />
+      <xsd:import schemaLocation="http://localhost:45498/EgyptianRecipesService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEgyptianRecipesService_ValidateBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateBranch" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_ValidateBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_GetAllBranches_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBranches" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_GetAllBranches_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBranchesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_GetBranchesByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranchesByID" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_GetBranchesByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranchesByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_InsertNewBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewBranch" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_InsertNewBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_UpdateBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBranch" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_UpdateBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_DeleteBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBranch" />
+  </wsdl:message>
+  <wsdl:message name="IEgyptianRecipesService_DeleteBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBranchResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEgyptianRecipesService">
+    <wsdl:operation name="ValidateBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEgyptianRecipesService/ValidateBranch" message="tns:IEgyptianRecipesService_ValidateBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEgyptianRecipesService/ValidateBranchResponse" message="tns:IEgyptianRecipesService_ValidateBranch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBranches">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEgyptianRecipesService/GetAllBranches" message="tns:IEgyptianRecipesService_GetAllBranches_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEgyptianRecipesService/GetAllBranchesResponse" message="tns:IEgyptianRecipesService_GetAllBranches_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchesByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEgyptianRecipesService/GetBranchesByID" message="tns:IEgyptianRecipesService_GetBranchesByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEgyptianRecipesService/GetBranchesByIDResponse" message="tns:IEgyptianRecipesService_GetBranchesByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEgyptianRecipesService/InsertNewBranch" message="tns:IEgyptianRecipesService_InsertNewBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEgyptianRecipesService/InsertNewBranchResponse" message="tns:IEgyptianRecipesService_InsertNewBranch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEgyptianRecipesService/UpdateBranch" message="tns:IEgyptianRecipesService_UpdateBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEgyptianRecipesService/UpdateBranchResponse" message="tns:IEgyptianRecipesService_UpdateBranch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEgyptianRecipesService/DeleteBranch" message="tns:IEgyptianRecipesService_DeleteBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEgyptianRecipesService/DeleteBranchResponse" message="tns:IEgyptianRecipesService_DeleteBranch_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEgyptianRecipesService" type="tns:IEgyptianRecipesService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateBranch">
+      <soap:operation soapAction="http://tempuri.org/IEgyptianRecipesService/ValidateBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBranches">
+      <soap:operation soapAction="http://tempuri.org/IEgyptianRecipesService/GetAllBranches" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchesByID">
+      <soap:operation soapAction="http://tempuri.org/IEgyptianRecipesService/GetBranchesByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewBranch">
+      <soap:operation soapAction="http://tempuri.org/IEgyptianRecipesService/InsertNewBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBranch">
+      <soap:operation soapAction="http://tempuri.org/IEgyptianRecipesService/UpdateBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBranch">
+      <soap:operation soapAction="http://tempuri.org/IEgyptianRecipesService/DeleteBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EgyptianRecipesService">
+    <wsdl:port name="BasicHttpBinding_IEgyptianRecipesService" binding="tns:BasicHttpBinding_IEgyptianRecipesService">
+      <soap:address location="http://localhost:45498/EgyptianRecipesService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
