@@ -5,6 +5,8 @@ EgyptianRecipes is a restraunt that has many branches and need to have a portal 
 
 There are two main types of users, Admin and normal users
 
+It is a simple example of using the Dependency Injection and Repository Pattern with WCF and ASP.Net MVC Application
+
 Features:
 ===============
 1- Admin/NormalUsers Can view all branches
