@@ -1,3 +1,6 @@
+EgyptianRecipes
+==================
+
 EgyptianRecipes is a restraunt that has many branches and need to have a portal to manage these branches 
 
 There are two main types of users, Admin and normal users
